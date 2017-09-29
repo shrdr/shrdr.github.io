@@ -1,0 +1,417 @@
+@font-face {
+    font-family: "Montserrat";
+    src: url('../fonts/Montserrat-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 500;
+}
+/*selection*/
+
+::-moz-selection {
+    background: #42e2d6;
+    color: #ff146e;
+    text-shadow: none;
+}
+
+::selection {
+    background: #42e2d6;
+    color: #ff146e;
+    text-shadow: none;
+}
+
+/*General styles*/
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    width: 100%;
+    margin: 0px;
+}
+
+h1 {
+    text-align: center;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-weight: 700;
+    color: #4a4a4a;
+    text-align: center;
+}
+/*General styles end*/
+
+/*Navbar*/
+.top-animate {
+    background: #ffffff !important;
+    top: 13px !important;
+    -webkit-transform: rotate(45deg);
+    /* Chrome, Safari, Opera */
+
+    transform: rotate(45deg);
+}
+
+.mid-animate {
+    opacity: 0;
+}
+
+.bottom-animate {
+    background: #ffffff !important;
+    top: 13px !important;
+    -webkit-transform: rotate(-225deg);
+    /* Chrome, Safari, Opera */
+
+    transform: rotate(-225deg);
+}
+
+.top-menu {
+    top: 5px;
+    width: 30px;
+    height: 3px;
+    border-radius: 10px;
+    background-color: #2AFFBE;
+}
+
+.mid-menu {
+    top: 13px;
+    width: 30px;
+    height: 3px;
+    border-radius: 10px;
+    background-color: #2AFFBE;
+}
+
+.bottom-menu {
+    top: 21px;
+    width: 30px;
+    height: 3px;
+    border-radius: 10px;
+    background-color: #2AFFBE;
+}
+
+.menui {
+    background: #2AFFBE;
+    transition: 0.6s ease;
+    transition-timing-function: cubic-bezier(.75, 0, .29, 1.01);
+    position: absolute;
+}
+
+.icon {
+    z-index: 999;
+    position: fixed;
+    /*    background: rgba(0, 0, 0, 0.21);*/
+    display: block;
+    padding: 9px;
+    height: 32px;
+    width: 32px;
+    margin: 25px;
+    top: 0;
+    left: 0;
+}
+
+.mobilenav {
+      /*    top: 47px !important;*/
+    top: 0;
+    left: 0;
+    z-index: 999;
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #2AFFBE;
+    opacity: 0.85;
+}
+
+.mobilenav li:first-child {
+    margin-top: 40px;
+}
+
+.mobilenav li {
+    list-style-type: none;
+    text-align: center;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.mobilenav li a{
+    letter-spacing: 4px;
+    font-size: 60px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 800;
+    width: 100%;
+}
+.mobilenav li span{
+    font-size: 100px;
+}
+/*Navbar end*/
+
+/*Header*/
+#headerwrap {
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 450px;
+    padding-top: 150px;
+    text-align: center;
+    width: 100%;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#headcontent {
+    text-align: center;
+    left: 25%;
+    border: .5em solid #fff;
+    color: #ffffff;
+    width: 50%;
+    padding: 10px;
+    position: relative;  /*ease scrolling*/
+}
+
+#headcontent h1 {
+    letter-spacing: 2px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #ffffff;
+    font-size: 80px;
+    font-weight: bold;
+}
+
+#headcontent h4 {
+    font-weight: 500;
+    font-size: 20px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+/*Header end*/
+
+/*Info*/
+#info {
+    margin: auto;
+    width: 60%;
+    line-height: 1.5;
+}
+
+#info h1 {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-weight: 600;
+    color: #4a4a4a;
+}
+
+#info p {
+    text-align: justify;
+    font-size: 19px;
+    font-weight: 400;
+    color: #4a4a4a;
+}
+
+#info #skull {
+    font-size: 35px;
+    color: #ff528e;
+    text-align: center;
+    margin-top: -15px;
+    margin-bottom: 10px;
+}
+/*Info end*/
+
+/*Buy ticket*/
+.form-style{
+    max-width: 700px;
+    margin: auto;
+    padding: 10px;
+}
+.form-style h1{
+    font-weight: 600;
+    text-align: center;
+    color: #4a4a4a;
+}
+.form-style input[type="text"],
+.form-style input[type="date"],
+.form-style input[type="datetime"],
+.form-style input[type="email"],
+.form-style input[type="number"],
+.form-style input[type="search"],
+.form-style input[type="time"],
+.form-style input[type="url"],
+.form-style textarea,
+.form-style select 
+{
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+    outline: none;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    border-radius: 10px;
+    width: 100%;
+    background: #fff;
+    margin-bottom: 4%;
+    border: 1px solid #ccc;
+    padding: 3%;
+    color: #555;
+    font-weight: 400;
+    font-size: 20px;
+}
+.form-style input[type="text"]:focus,
+.form-style input[type="date"]:focus,
+.form-style input[type="datetime"]:focus,
+.form-style input[type="email"]:focus,
+.form-style input[type="number"]:focus,
+.form-style input[type="search"]:focus,
+.form-style input[type="time"]:focus,
+.form-style input[type="url"]:focus,
+.form-style textarea:focus,
+.form-style select:focus
+{
+    box-shadow: 0 0 5px #2AFFBE;
+    padding: 3%;
+    border: 1px solid #2AFFBE;
+}
+
+.form-style label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 400;
+    color: #4a4a4a;
+}
+
+.form-style select {
+    color:#8a97a0;
+    margin-bottom: 20px;
+}
+
+.form-style input[type="submit"],
+.form-style input[type="button"]{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    width: 100%;
+    padding: 3%;
+    margin-bottom: 7%;
+    background: #2AFFBE;
+    border-radius: 10px;
+    border-bottom: 2px solid #26cc9a;
+    border-top-style: none;
+    border-right-style: none;
+    border-left-style: none;    
+    color: #fff;
+    font-weight: 600;
+    font-size: 25px;
+}
+.form-style input[type="submit"]:hover,
+.form-style input[type="button"]:hover{
+    background: #26cc9a;
+}
+/*Buy ticket end*/
+
+/*Gallery*/
+table {
+    text-align: center;
+    margin: auto;
+    padding-bottom: 30px;
+    padding-top: 25px;
+    width: 60%;
+}
+
+.viewer-item {
+    border-radius: 10px;
+    max-width: none;
+    height: 300px;
+    width: 300px;
+    background-repeat: no-repeat;
+    margin: 25px;
+    display: block;
+    
+    -webkit-transition: opacity 1s, -webkit-transform 1s;
+    transition: opacity 1s, transform 1s;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+#box:hover .viewer-item{
+    opacity: 0.75;
+    -webkit-transform: scale3d(1.05, 1.05, 1);
+    transform: scale3d(1.05, 1.05, 1);
+}
+
+#overlay h1,#overlay p{    
+    -webkit-transition: opacity 1s, -webkit-transform 1s;
+    transition: opacity 1s, transform 1s;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+#overlay h1{   
+    text-align: left;
+    font-size: 24px;
+    font-weight: 400;
+    color: white;
+    letter-spacing: -0.5px;
+}
+#overlay p{
+    text-align: left;
+    font-size: 12px;
+    font-weight: 200;
+    color: #1bd199;
+    opacity: 0;
+    text-transform: uppercase;
+    letter-spacing: -0.5px;
+}
+
+#box:hover #overlay h1{
+    opacity: 1;
+	-webkit-transform: scale3d(1.1,1.1,1);
+	transform: scale3d(1.1,1.1,1);
+}
+
+#box:hover #overlay p{
+    opacity: 1;
+	-webkit-transform: scale3d(1.1,1.1,1);
+	transform: scale3d(1.1,1.1,1);
+}
+/*Gallery end*/
+
+/*Footer*/
+#footerwrap {
+    height: 200px;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    width: 100%;
+   /* background-image: linear-gradient( 0deg, #AFFFAE, #2AFFBE);*/
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 50px;
+    
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#footercontent {
+    width: 30%;
+    margin: auto;
+    border: 10px solid #fff;
+    color: #fff;
+}
+#footerwrap #footercontent h1 {
+    letter-spacing: 4px;
+    font-size: 40px;
+    color: #fff;
+}
+
+#footerwrap #footercontent p {
+    font-size: 25px;
+}
+/*Footer end*/
